@@ -3,60 +3,42 @@
   <head>
     <meta charset="utf-8">
     <link href="styles.css" rel="stylesheet" />
-    <script src="app.js"></script>
+   
     <title>IEEE todo app</title>
   </head>
   <body>
   	<div id="wrapper">
 	    <header>
 	    	<div id="page-banner">
-	    		<h1 class="title">Todo App</h1>
+                <h1 class="title">Todo App</h1>
+            <!-- search the list -->
           <form id="search-todo">
             <input type="text" placeholder="Search list..." />
           </form>
 	    	</div>
 	    </header>
 	    <div id="book-list">
-	    	<h2 class="title">Tasks todo:</h2>
+            <h2 class="title">Tasks todo:</h2>
+            <!-- default list to start with.. -->
 	    	<ul>
 	    		<li>
 	    			<span class="name">IEEE task</span>
 	    			<span class="delete">delete</span>
 	    		</li>
 	    		<li>
-	    			<span class="name">school project</span>
+	    			<span class="name">School project</span>
 	    			<span class="delete">delete</span>
 	    		</li>
-	    		<li>
-	    			<span class="name">course assignment</span>
-	    			<span class="delete">delete</span>
-	    		</li>
-	    		<li>
-	    			<span class="name">cook dinner</span>
-	    			<span class="delete">delete</span>
-	    		</li>
+	    	<!-- new tasks goes here-->
 	    	</ul>
 	    </div>
 	    <form id="add-book">
-        <input type="checkbox" id="hide" />
-        <label for="hide">Hide all Tasks</label>
-	    	<input type="text" placeholder="Add a book..." />
+            <input type="text" placeholder="Add a book..." />
+            <!-- add button-->
 	    	<button>Add</button>
-	    </form>
-      <div id="tabbed-content">
-        <ul class="tabs">
-          <li data-target="#about" class="active">About</li>
-          <li data-target="#contact">Contact</li>
-        </ul>
-        <div class="panel active" id="about">
-          <p>All rights reserved</p>
-          <p>Large pieces of this code were copied from ninga net repo on github</p>
-        </div>
-        <div class="panel" id="contact">
-          <p>Content for contact tab...</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
-        </div>
-      </div>
-    </div>
+		</form> 
+		 
+	</div> <!-- end of wrapper-->
+	<script src="app.js"></script>
   </body>
 </html>
